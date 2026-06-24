@@ -5,22 +5,30 @@ button {
     color: blue;
 }
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Times New Roman', Courier, monospace;
     font-size: 20px;
     color:black;
 }
 .main {
     border-style: solid;
-    border-color: blueviolet;
-    border-width: 15px;
-    width: "fit-content";
+    border-color: red;
+    border-width: 2px;
+    width: fit-content;
     border-radius: 15px;
     padding: 20px;
     position: absolute;
-    background-image: url(https://thf.bing.com/th/id/OIP.WJKq3HnJq8-h1pvdaqd6bAHaEK?w=323&h=181&c=7&r=0&o=7&cb=thfc1falcon2&pid=1.7&rm=3);
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url(https://thf.bing.com/th/id/OIP.WJKq3HnJq8-h1pvdaqd6bAHaEK?w=323&h=181&c=7&r=0&o=7&cb=thfc1falcon2&pid=1.7&rm=3);
+    background-attachment: fixed;
     background-size: cover;
-    height: 100vh
+    height: 100vh;
 }
 .top {
+    position: fixed;
+    width: 100%;
     display: flex;
+    backdrop-filter: blur(10px);
+    background-color: #ffaaff;
+    justify-content: space-between;
 }
