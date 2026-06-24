@@ -1,6 +1,11 @@
 p {
-    color: grey
+    color: grey;
 }
 button {
     color: blue;
+}
+body {
+    font-family: 'Times New Roman', Courier, monospace;
+    font-size: 20px
+    color:black;
 }
