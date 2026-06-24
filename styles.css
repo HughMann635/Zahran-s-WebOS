@@ -8,6 +8,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Courier, monospace;
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url(https://thf.bing.com/th/id/OIP.WJKq3HnJq8-h1pvdaqd6bAHaEK?w=323&h=181&c=7&r=0&o=7&cb=thfc1falcon2&pid=1.7&rm=3);
+    background-attachment: fixed;
+    background-size: cover;
     font-size: 20px;
     color:black;
 }
@@ -19,16 +22,15 @@ body {
     border-radius: 15px;
     padding: 20px;
     position: absolute;
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url(https://thf.bing.com/th/id/OIP.WJKq3HnJq8-h1pvdaqd6bAHaEK?w=323&h=181&c=7&r=0&o=7&cb=thfc1falcon2&pid=1.7&rm=3);
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100vh;
 }
-.top {
+.bottom {
+    bottom: 0%;
     position: fixed;
     width: 100%;
     display: flex;
+    box-sizing: border-box;
     backdrop-filter: blur(10px);
-    background-color: #ffaaff;
+    background-color: #ffd540;
     justify-content: space-between;
+    padding: 12px;
 }
