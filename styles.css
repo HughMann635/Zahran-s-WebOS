@@ -12,5 +12,15 @@ body {
 .main {
     border-style: solid;
     border-color: blueviolet;
-    border-width: 20px;
+    border-width: 15px;
+    width: "fit-content";
+    border-radius: 15px;
+    padding: 20px;
+    position: absolute;
+    background-image: url(https://thf.bing.com/th/id/OIP.WJKq3HnJq8-h1pvdaqd6bAHaEK?w=323&h=181&c=7&r=0&o=7&cb=thfc1falcon2&pid=1.7&rm=3);
+    background-size: cover;
+    height: 100vh
+}
+.top {
+    display: flex;
 }
