@@ -9,3 +9,8 @@ body {
     font-size: 20px;
     color:black;
 }
+.main {
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 20px;
+}
