@@ -26,6 +26,8 @@ body {
     background-image: url("https://th.bing.com/th/id/OIP.QrPCIDe4i8G_3iiKGFm7tQHaFB?w=241&h=180&c=7&r=0&o=7&pid=1.7&rm=3");
     background-size: cover;
     overflow-y: scroll;
+    user-select: none; 
+    cursor: grab;
 }
 .bottom {
     bottom: 0%;
@@ -37,6 +39,12 @@ body {
     background-color: #ffd540;
     justify-content: space-between;
     padding: 12px;
+    /*Hiding the bottom bar logic - I used Gemini to help me with this*/
+    transform: translateY(85%); 
+    transition: transform 0.3s ease-in-out; 
+}
+.bottom:hover {
+    transform: translateY(0%);
 }
 #welcome {
     position: absolute;
