@@ -45,18 +45,17 @@ function dragelement(element) {
     }
 
 }
+/*Used Gemini to help me with the opening/closing window logic*/
 var welcomeScreen = document.querySelector("#welcome")
-function closeWindow() {
-    element.style.display = "none";
-}
-function openWindow() {
-    element.style.display = "block";
-}
 var welcomeScreenClose = document.querySelector("#welcomeclose")
 var welcomeScreenOpen = document.querySelector("#welcomeopen")
+
+// Change the style directly inside the click event
 welcomeScreenClose.addEventListener("click", function() {
-  closeWindow(welcomeScreen);
+    welcomeScreen.style.display = "none";
 });
+
+// Change the style directly inside the click event
 welcomeScreenOpen.addEventListener("click", function() {
-  openWindow(welcomeScreen);
+    welcomeScreen.style.display = "block";
 });
