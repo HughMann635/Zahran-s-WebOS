@@ -34,3 +34,6 @@ body {
     justify-content: space-between;
     padding: 12px;
 }
+#welcome {
+    position: absolute;
+}
