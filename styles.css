@@ -18,10 +18,14 @@ body {
     border-style: solid;
     border-color: red;
     border-width: 2px;
-    width: fit-content;
+    width: 100vw;
+    height: 100vh;
     border-radius: 15px;
     padding: 20px;
     position: absolute;
+    background-image: url("https://th.bing.com/th/id/OIP.QrPCIDe4i8G_3iiKGFm7tQHaFB?w=241&h=180&c=7&r=0&o=7&pid=1.7&rm=3");
+    background-size: cover;
+    overflow-y: scroll;
 }
 .bottom {
     bottom: 0%;
