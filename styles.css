@@ -49,3 +49,7 @@ body {
 #welcome {
     position: absolute;
 }
+#app_1 {
+    padding-top: 64px; 
+    padding-left: 16px;
+}
