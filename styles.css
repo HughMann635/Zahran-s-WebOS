@@ -43,6 +43,7 @@ body {
     overflow-y: scroll;
     user-select: none; 
     cursor: grab;
+    
 }
 .bottom {
     bottom: 0%;

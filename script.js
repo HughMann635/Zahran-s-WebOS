@@ -46,7 +46,6 @@ function dragelement(element) {
 
 }
 
-
 /*Used Gemini to help me with the opening/closing window logic*/
 var welcomeScreen = document.querySelector("#welcome")
 var welcomeScreenClose = document.querySelector("#welcomeclose")
@@ -93,6 +92,7 @@ dragelement(document.querySelector("#app_1_window"))
 var galleryIcon = document.querySelector("#gallery-icon");
 var selectedApp = null;
 
+/*Asked Gemini for help on how to fix this icon selection logic*/
 galleryIcon.addEventListener("click", function(event) {
     event.stopPropagation(); 
     
