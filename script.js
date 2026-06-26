@@ -45,19 +45,31 @@ function dragelement(element) {
     }
 
 }
+
+
 /*Used Gemini to help me with the opening/closing window logic*/
 var welcomeScreen = document.querySelector("#welcome")
 var welcomeScreenClose = document.querySelector("#welcomeclose")
 var welcomeScreenOpen = document.querySelector("#welcomeopen")
 
-// Change the style directly inside the click event
 welcomeScreenClose.addEventListener("click", function() {
     welcomeScreen.style.display = "none";
 });
 
-// Change the style directly inside the click event
 welcomeScreenOpen.addEventListener("click", function() {
     welcomeScreen.style.display = "block";
+});
+
+var galleryScreen = document.querySelector("#app_1_window")
+var galleryScreenClose = document.querySelector("#galleryclose")
+var galleryScreenOpen = document.querySelector("#gallery-icon")
+
+galleryScreenClose.addEventListener("click", function() {
+    galleryScreen.style.display = "none";
+});
+
+galleryScreenOpen.addEventListener("click", function() {
+    galleryScreen.style.display = "block";
 });
 
 var selectedIcon = undefined
@@ -77,4 +89,25 @@ function handleIconTap(element) {
     selectIcon(element)
   }
 }
-dragElement(document.querySelector("#app_1"))
+dragelement(document.querySelector("#app_1_window"))
+var galleryIcon = document.querySelector("#gallery-icon");
+var selectedApp = null;
+
+galleryIcon.addEventListener("click", function(event) {
+    event.stopPropagation(); 
+    
+    var isNowSelected = galleryIcon.classList.toggle("selected");
+    
+    if (isNowSelected) {
+        selectedApp = "gallery";
+    } else {
+        selectedApp = null; 
+    }
+});
+
+document.addEventListener("click", function() {
+    if (selectedApp !== null) {
+        galleryIcon.classList.remove("selected");
+        selectedApp = null;
+    }
+});
